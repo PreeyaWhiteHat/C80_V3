@@ -1,3 +1,15 @@
+ return (
+                <View style={styles.container}>
+                    <SafeAreaView style={styles.droidSafeArea} />
+                    <FlatList
+                        keyExtractor={this.keyExtractor}
+                        data={meteors}
+                        renderItem={this.renderItem}
+                        horizontal={true}
+                    />
+                </View >
+            );
+ -------------------------------------------------------
  renderItem = ({ item }) => {
         let meteor = item
         let bg_img, speed, size;
