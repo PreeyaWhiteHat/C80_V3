@@ -10,6 +10,15 @@
                 </View >
             );
  -------------------------------------------------------
+  container: {
+        flex: 1
+    },
+    droidSafeArea: {
+        marginTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
+    },
+    -----------------------------------------------------------
+    keyExtractor = (item, index) => index.toString();
+    -----------------------------------------------------
  renderItem = ({ item }) => {
         let meteor = item
         let bg_img, speed, size;
